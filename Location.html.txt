@@ -1,0 +1,48 @@
+<div data-role="page" id="page1">
+
+     <div class="Header" data-role="header">
+          <h1>Know Your City</h1>
+     </div>
+    
+<div data-role="content">     
+          <p><a href="#GeoLocationPage" data-role="button">Check Your City Geo-location</a></p>
+          <p><a href="#WeatherPage" data-role="button">Check Your City Weather </a></p>
+ </div>
+</div>
+
+<div data-role="page" id="GeoLocationPage">
+
+    <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Geo-location Page</h1>
+     </div>
+
+<div data-role="content">        
+        <script src="https://maps.googleapis.com/maps/api/js?            v=3.exp&sensor=true"></script>
+        <p>Geolocation Service</p>
+      <div id="map"></div>
+</div>
+</div>
+
+
+<div data-role="page" id="WeatherPage">
+
+    <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1> City Weather Condition</h1>
+     </div>
+    <div data-role="content">
+        <p> City Weather Condition</p>
+        <button id="showweather">Show weather</button>
+        <div id="Jweather"></div>
+    </div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
